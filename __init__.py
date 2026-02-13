@@ -1,1 +1,1 @@
-from .processes_plugin import ProcessesPlugin
+from .ProcessesPlugin import ProcessesPlugin

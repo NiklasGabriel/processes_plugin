@@ -27,7 +27,7 @@ class ProcessesPlugin(
     """Placeholder plugin class for process-related extensions."""
 
     NAME = "Processes Plugin"
-    SLUG = "processes_plugin"
+    SLUG = "processes"
     TITLE = "Processes"
     DESCRIPTION = "Placeholder plugin for process-related extensions"
     VERSION = "0.1.0"

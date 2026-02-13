@@ -3,17 +3,18 @@ requires = ["setuptools>=61", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "processes-plugin"
+name = "processes"
 version = "0.1.0"
 description = "InvenTree plugin for processes."
-requires-python = ">=3.10"
-authors = [
-  { name = "Niklas" }
-]
-
-[tool.setuptools]
-packages = { find = {} }
-include-package-data = true
+requires-python = ">=3.9"
+dependencies = []
 
 [project.entry-points."inventree_plugins"]
-processes_plugin = "processes_plugin.processes_plugin:ProcessesPlugin"
+processes = "processes_plugin.processes_plugin:ProcessesPlugin"
+
+[tool.setuptools]
+packages = ["processes_plugin"]
+include-package-data = true
+
+[tool.setuptools.package-data]
+processes_plugin = ["static/*", "templates/*"]
